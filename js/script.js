@@ -410,6 +410,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  // Gestion des boutons de vote
+  const voteButtons = document.querySelectorAll(".vote-button");
+
+  if (voteButtons.length > 0) {
+    voteButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Récupérer le texte du bouton
+        const voteName = this.textContent.trim();
+
+        // Désactiver tous les boutons
+        voteButtons.forEach((btn) => {
+          btn.disabled = true;
+          btn.style.opacity = "0.5";
+        });
+
+        // Mettre en évidence le bouton cliqué
+        this.style.opacity = "1";
+        this.style.transform = "scale(1.1)";
+        this.style.boxShadow = "0 0 15px rgba(255, 165, 0, 0.5)";
+
+        // Créer un message de remerciement
+        const voteContainer = document.querySelector(".about-feature-vote");
+        const thankYouMessage = document.createElement("p");
+        thankYouMessage.textContent = `Merci d'avoir voté pour "${voteName}" ! Jérôme va être ravi (ou pas) 😉`;
+        thankYouMessage.style.textAlign = "center";
+        thankYouMessage.style.marginTop = "15px";
+        thankYouMessage.style.fontWeight = "bold";
+        thankYouMessage.style.color = "#ff5722";
+
+        // Ajouter une animation au message
+        thankYouMessage.style.animation = "pulse 2s infinite";
+
+        // Ajouter le message après les boutons
+        voteContainer.appendChild(thankYouMessage);
+
+        // Stocker le vote dans le localStorage
+        localStorage.setItem("poulpVote", voteName);
+      });
+    });
+
+    // Vérifier si l'utilisateur a déjà voté
+    const previousVote = localStorage.getItem("poulpVote");
+    if (previousVote) {
+      // Trouver le bouton correspondant au vote précédent
+      voteButtons.forEach((button) => {
+        if (button.textContent.trim() === previousVote) {
+          // Simuler un clic sur ce bouton
+          button.click();
+        }
+      });
+    }
+  }
+
   // Déclencher l'animation des jauges au chargement et au défilement
   window.addEventListener("load", animateIntensityBars);
   window.addEventListener("scroll", animateIntensityBars);

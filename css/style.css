@@ -1266,3 +1266,194 @@ footer {
     max-height: 30px;
   }
 }
+
+/* Vignette décorée pour la photo du club */
+.about-feature {
+  margin: 40px 0;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 150, 0.2);
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  padding: 20px;
+}
+
+.about-feature-inner {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-feature-title {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.about-feature-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.about-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-feature-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.about-feature-text em {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.about-feature-image-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-feature-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-feature-image:hover {
+  transform: scale(1.03);
+}
+
+.about-feature-decoration {
+  position: absolute;
+  z-index: 1;
+}
+
+.bubble-decoration {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+}
+
+.bubble-1 {
+  top: 20px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.bubble-2 {
+  bottom: 40px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  animation: float 6s ease-in-out infinite 1s;
+}
+
+.bubble-3 {
+  top: 50%;
+  right: 60px;
+  width: 25px;
+  height: 25px;
+  animation: float 5s ease-in-out infinite 0.5s;
+}
+
+.about-feature-vote {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.vote-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.vote-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vote-button.oceanic {
+  background-color: #023e8a;
+}
+
+.vote-button.oceanic:hover {
+  background-color: white;
+  color: #023e8a;
+  border-color: #023e8a;
+}
+
+.vote-button.poulp {
+  background-color: var(--secondary-color);
+}
+
+.vote-button.poulp:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Media queries pour la vignette */
+@media (min-width: 768px) {
+  .about-feature-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-feature-text {
+    flex: 1;
+  }
+
+  .about-feature-image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-feature-image-container {
+    margin-bottom: 20px;
+  }
+
+  .about-feature-vote {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .vote-button {
+    width: 80%;
+  }
+}
