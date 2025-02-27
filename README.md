@@ -83,11 +83,7 @@ Les images utilisées dans ce projet sont des placeholders d'Unsplash. Pour un s
 ## 👥 Équipe
 
 - **Directeur** : Jérôme Laborde
-- **Développeur** : [Votre nom]
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+- **Développeur** : [Mostefaoui Christophe]
 
 ---
 
