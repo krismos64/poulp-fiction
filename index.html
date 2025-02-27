@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poulp Fiction - Club de Plongée à Saint-Cyprien</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <div class="splash-screen" id="splash-screen">
+      <div class="splash-content">
+        <div class="logo-splash">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4727/4727419.png"
+            alt="Logo Poulp Fiction"
+            class="poulpe-logo"
+          />
+        </div>
+        <lottie-player
+          src="https://assets5.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+        <h1 class="splash-title">Poulp Fiction</h1>
+        <p class="splash-tagline">
+          "Tu veux plonger dans une aventure épique ? On va te faire une offre
+          que tu ne pourras pas refuser... 🦑💨"
+        </p>
+        <button class="splash-button" id="enter-site">PLONGER</button>
+      </div>
+      <div id="bubbles-container" class="bubbles-container"></div>
+    </div>
+
+    <header id="main-header">
+      <div class="logo-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4727/4727419.png"
+          alt="Logo Poulp Fiction"
+          class="header-logo"
+        />
+        <h1>Poulp Fiction</h1>
+        <div class="tentacle tentacle-1"></div>
+        <div class="tentacle tentacle-2"></div>
+      </div>
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#accueil" class="nav-link">Accueil</a></li>
+          <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+          <li><a href="#plongees" class="nav-link">Nos Plongées</a></li>
+          <li><a href="#tarifs" class="nav-link">Tarifs & Réservations</a></li>
+          <li><a href="#galerie" class="nav-link">Galerie</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="water-effect">
+          <div class="water-wave wave1"></div>
+          <div class="water-wave wave2"></div>
+        </div>
+        <div class="hero-content">
+          <h2>Bienvenue dans les Profondeurs</h2>
+          <p>Chez nous, le seul truc qui coule, c'est l'ennui !</p>
+          <a href="#plongees" class="cta-button">Découvrir nos aventures</a>
+        </div>
+        <div class="hero-animation">
+          <lottie-player
+            src="https://assets3.lottiefiles.com/packages/lf20_ystsffqy.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </section>
+
+      <section id="a-propos" class="about">
+        <h2 class="section-title">L'Équipe de Choc</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Dirigé par le légendaire Jérôme Laborde, notre club de plongée
+              combine passion pour l'océan et amour du cinéma dans une
+              expérience sous-marine unique.
+            </p>
+            <p>
+              Un poulpe peut s'infiltrer partout… Nous aussi, on t'emmène dans
+              les moindres recoins de l'océan !
+            </p>
+            <div class="fun-fact">
+              <h3>Le saviez-vous ?</h3>
+              <p>
+                Le poulpe est le seul animal marin qui se retrouve dans toutes
+                les mers et océans du monde... tout comme notre réputation !
+              </p>
+            </div>
+          </div>
+          <div class="team-container">
+            <div class="team-member">
+              <img
+                src="48F14F56-13B4-4E50-B717-16B638FE5E7B_1_105_c.jpeg"
+                alt="Jérôme Laborde"
+              />
+              <h3>Jérôme Laborde</h3>
+              <p>"Le Directeur"</p>
+              <p>
+                Ancien cascadeur devenu maître plongeur, il connaît les fonds
+                marins comme sa poche.
+              </p>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://randomuser.me/api/portraits/women/32.jpg"
+                alt="Sophie Marleau"
+              />
+              <h3>Sophie Marleau</h3>
+              <p>"La Biologiste"</p>
+              <p>Elle parle couramment le langage des poulpes et des mérous.</p>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://randomuser.me/api/portraits/men/22.jpg"
+                alt="Marc Tentacule"
+              />
+              <h3>Marc Tentacule</h3>
+              <p>"Le Technicien"</p>
+              <p>
+                Il peut réparer n'importe quel équipement avec un trombone et du
+                chewing-gum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="plongees" class="dives">
+        <h2 class="section-title">Nos Plongées Épiques</h2>
+        <div class="dives-container">
+          <div class="dive-card">
+            <div class="dive-image">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+                alt="Mission Poulpes Possibles"
+              />
+            </div>
+            <div class="dive-content">
+              <h3>Mission Poulpes Possibles</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Intensité:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 70%"></div>
+                </div>
+              </div>
+              <p>
+                Une plongée d'infiltration dans les grottes sous-marines où se
+                cachent les poulpes les plus rusés de la Méditerranée.
+              </p>
+              <a href="#tarifs" class="dive-button">Je veux cette mission</a>
+            </div>
+          </div>
+
+          <div class="dive-card">
+            <div class="dive-image">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-92ab472cad5d"
+                alt="Les Dents de la Mer... Sans les Dents"
+              />
+            </div>
+            <div class="dive-content">
+              <h3>Les Dents de la Mer... Sans les Dents</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Intensité:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 50%"></div>
+                </div>
+              </div>
+              <p>
+                Une aventure familiale pour observer les requins pacifiques de
+                la région. Frissons garantis, mais en toute sécurité !
+              </p>
+              <a href="#tarifs" class="dive-button">Je veux cette mission</a>
+            </div>
+          </div>
+
+          <div class="dive-card">
+            <div class="dive-image">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-8dd44f3a9ab3"
+                alt="Octo-Pulp Fiction"
+              />
+            </div>
+            <div class="dive-content">
+              <h3>Octo-Pulp Fiction</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Intensité:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <p>
+                Notre plongée la plus mythique ! Une descente à 30 mètres pour
+                explorer une épave mystérieuse. Réservée aux plongeurs
+                expérimentés.
+              </p>
+              <a href="#tarifs" class="dive-button">Je veux cette mission</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tarifs" class="pricing">
+        <h2 class="section-title">Tarifs & Réservations</h2>
+        <p class="pricing-tagline">
+          Tu veux plonger sans pression ? (Contrairement aux bouteilles...)
+        </p>
+
+        <div class="pricing-container">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Baptême de Plongée</h3>
+              <p class="price">75€</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>Initiation en piscine</li>
+                <li>Plongée en mer (max 6m)</li>
+                <li>Équipement fourni</li>
+                <li>Photos souvenirs</li>
+              </ul>
+            </div>
+            <a href="#contact" class="pricing-button">Réserver</a>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="pricing-header">
+              <h3>Pack Aventurier</h3>
+              <p class="price">150€</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>2 plongées en mer</li>
+                <li>Exploration de grottes</li>
+                <li>Équipement fourni</li>
+                <li>Vidéo souvenir</li>
+                <li>Certificat "Octo-Plongeur"</li>
+              </ul>
+            </div>
+            <a href="#contact" class="pricing-button">Réserver</a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Formation Niveau 1</h3>
+              <p class="price">350€</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>5 séances théoriques</li>
+                <li>5 plongées en mer</li>
+                <li>Équipement fourni</li>
+                <li>Certification officielle</li>
+                <li>T-shirt Poulp Fiction</li>
+              </ul>
+            </div>
+            <a href="#contact" class="pricing-button">Réserver</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="galerie" class="gallery">
+        <h2 class="section-title">Galerie des Profondeurs</h2>
+
+        <div class="gallery-filter">
+          <button class="filter-button active" data-filter="all">Tout</button>
+          <button class="filter-button" data-filter="plongeurs">
+            Plongeurs
+          </button>
+          <button class="filter-button" data-filter="poulpes">Poulpes</button>
+          <button class="filter-button" data-filter="paysages">Paysages</button>
+        </div>
+
+        <div class="gallery-container">
+          <!-- Les images seront chargées dynamiquement via JavaScript -->
+        </div>
+
+        <div class="gallery-modal" id="gallery-modal">
+          <span class="modal-close">&times;</span>
+          <img class="modal-content" id="modal-img" />
+          <div class="modal-caption" id="modal-caption"></div>
+          <div class="modal-nav">
+            <button class="modal-prev">&#10094;</button>
+            <button class="modal-next">&#10095;</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title">Rejoins l'Aventure</h2>
+        <p class="contact-tagline">
+          Postule pour ton propre rôle dans notre film sous-marin !
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                Port de Saint-Cyprien, Quai Arthur Rimbaud, 66750 Saint-Cyprien,
+                France
+              </p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+33 4 XX XX XX XX</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>info@poulp-fiction.fr</p>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.1654365743256!2d3.0356!3d42.6234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b06e4e8e753e21%3A0x91f34fb15676e9fa!2sPort%20de%20Saint-Cyprien!5e0!3m2!1sfr!2sfr!4v1645554407721!5m2!1sfr!2sfr"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Nom de Scène</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="experience">Expérience en Plongée</label>
+              <select id="experience" name="experience">
+                <option value="none">Aucune (mais motivé !)</option>
+                <option value="beginner">Débutant</option>
+                <option value="intermediate">Intermédiaire</option>
+                <option value="advanced">Avancé</option>
+                <option value="professional">Professionnel</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Ton Script (Message)</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" checked />
+                Je veux recevoir les actualités de Poulp Fiction
+              </label>
+            </div>
+            <button type="submit" class="submit-button">
+              Envoyer ma candidature
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Poulp Fiction</h2>
+          <p>Octo-plonge avec nous ! 🐙💦</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#a-propos">À Propos</a></li>
+              <li><a href="#plongees">Nos Plongées</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#galerie">Galerie</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Légal</h3>
+            <ul>
+              <li><a href="#">Mentions Légales</a></li>
+              <li><a href="#">Politique de Confidentialité</a></li>
+              <li><a href="#">CGV</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Horaires</h3>
+            <p>Lundi - Samedi: 9h - 19h</p>
+            <p>Dimanche: 10h - 17h</p>
+            <p>Fermé les jours de tempête !</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2023 Poulp Fiction - Club de Plongée. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <div class="floating-tentacles">
+      <div class="tentacle floating-tentacle-1"></div>
+      <div class="tentacle floating-tentacle-2"></div>
+      <div class="tentacle floating-tentacle-3"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

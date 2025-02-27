@@ -1,0 +1,37 @@
+# Fichiers système macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Fichiers de sauvegarde
+*~
+*.bak
+*.swp
+
+# Fichiers de configuration d'éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dépendances et fichiers générés
+node_modules/
+dist/
+build/
+.cache/
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log* 
