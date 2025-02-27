@@ -174,22 +174,22 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "paysages",
     },
     {
-      src: "img/Utj16dz0jHo6GLvu-generated_image.jpg",
-      alt: "Plongeur en combinaison",
-      caption: "Prêt pour l'aventure",
+      src: "img/Photoroom_20250227_171322.PNG",
+      alt: "Notre équipe en action",
+      caption: "L'équipe Poulp Fiction en pleine action",
       category: "plongeurs",
     },
     {
-      src: "img/LsqxzKzOYRJVvPK3-generated_image.jpg",
-      alt: "Poulpe géant",
-      caption: "Le gardien des profondeurs",
-      category: "poulpes",
+      src: "img/poulpfiction.JPG",
+      alt: "Club Poulp Fiction",
+      caption: "Notre club de plongée",
+      category: "paysages",
     },
     {
-      src: "img/8ZYoaxEAiQKvIlKX-generated_image.jpg",
-      alt: "Vue sous-marine",
-      caption: "La lumière des profondeurs",
-      category: "paysages",
+      src: "img/jerome.jpeg",
+      alt: "Jérôme en plongée",
+      caption: "Le directeur en exploration",
+      category: "plongeurs",
     },
   ];
 
