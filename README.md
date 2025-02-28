@@ -41,11 +41,6 @@ Le site comprend les sections suivantes :
 
 2. Ouvrez le fichier `index.html` dans votre navigateur pour visualiser le site.
 
-3. Pour modifier le site :
-   - Modifiez le HTML dans `index.html`
-   - Modifiez les styles dans `css/style.css`
-   - Modifiez les fonctionnalités JavaScript dans `js/script.js`
-
 ## 📱 Compatibilité
 
 Le site est compatible avec les navigateurs modernes :
@@ -54,25 +49,6 @@ Le site est compatible avec les navigateurs modernes :
 - Firefox
 - Safari
 - Edge
-
-## 🎨 Personnalisation
-
-Vous pouvez facilement personnaliser le site en modifiant les variables CSS dans le fichier `style.css` :
-
-```css
-:root {
-  --primary-color: #0077b6;
-  --secondary-color: #ff5722;
-  --accent-color: #ffd166;
-  --dark-color: #03045e;
-  --light-color: #caf0f8;
-  /* ... autres variables ... */
-}
-```
-
-## 🖼️ Images
-
-Les images utilisées dans ce projet sont des placeholders d'Unsplash. Pour un site en production, remplacez-les par vos propres images.
 
 ## 🔗 Liens Externes
 
@@ -83,7 +59,7 @@ Les images utilisées dans ce projet sont des placeholders d'Unsplash. Pour un s
 ## 👥 Équipe
 
 - **Directeur** : Jérôme Laborde
-- **Développeur** : [Mostefaoui Christophe]
+- **Développeur** : Mostefaoui Christophe
 
 ---
 
