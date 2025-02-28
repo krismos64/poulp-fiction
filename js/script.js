@@ -105,14 +105,33 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuToggle) {
     menuToggle.addEventListener("click", () => {
       navMenu.classList.toggle("active");
+
+      // Trouver l'animation Lottie dans le menu toggle
+      const menuLottie = menuToggle.querySelector("lottie-player");
+
+      // Si le menu est ouvert, changer la vitesse de l'animation
+      if (navMenu.classList.contains("active")) {
+        menuLottie.speed = 1.5;
+        menuLottie.play();
+      } else {
+        menuLottie.speed = -1.5; // Inverser l'animation
+        menuLottie.play();
+      }
     });
   }
 
-  // Fermer le menu mobile lorsqu'un lien est cliqué
+  // Fermer le menu mobile quand on clique sur un lien
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      navMenu.classList.remove("active");
+      if (navMenu.classList.contains("active")) {
+        navMenu.classList.remove("active");
+
+        // Réinitialiser l'animation du bouton menu
+        const menuLottie = menuToggle.querySelector("lottie-player");
+        menuLottie.speed = -1.5;
+        menuLottie.play();
+      }
     });
   });
 

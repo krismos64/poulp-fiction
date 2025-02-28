@@ -14,13 +14,8 @@
   <body>
     <div class="splash-screen" id="splash-screen">
       <div class="splash-content">
-        <img
-          src="img/logozz.jpg"
-          alt="Poulp Fiction Logo"
-          class="poulpe-logo"
-        />
         <lottie-player
-          src="https://assets5.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+          src="animations/splash-animation.json"
           background="transparent"
           speed="1"
           style="width: 300px; height: 300px"
@@ -39,26 +34,45 @@
 
     <header id="main-header">
       <div class="logo-container">
-        <img
-          src="img/logozz.jpg"
-          alt="Poulp Fiction Logo"
-          class="poulpe-logo-small"
-        />
+        <lottie-player
+          src="animations/splash-animation.json"
+          background="transparent"
+          speed="1"
+          style="width: 60px; height: 60px"
+          loop
+          autoplay
+        ></lottie-player>
         <h1>Poulp Fiction</h1>
-        <div class="tentacle tentacle-1"></div>
-        <div class="tentacle tentacle-2"></div>
       </div>
       <nav>
         <div class="menu-toggle" id="menu-toggle">
-          <i class="fas fa-bars"></i>
+          <lottie-player
+            src="animations/hero-animation.json"
+            background="transparent"
+            speed="1"
+            style="width: 40px; height: 40px"
+            loop
+            hover
+          ></lottie-player>
         </div>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#accueil" class="nav-link">Accueil</a></li>
           <li><a href="#a-propos" class="nav-link">À Propos</a></li>
           <li><a href="#plongees" class="nav-link">Nos Plongées</a></li>
+          <li><a href="#balades" class="nav-link">Balades en Bateau</a></li>
           <li><a href="#tarifs" class="nav-link">Tarifs & Réservations</a></li>
           <li><a href="#galerie" class="nav-link">Galerie</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <div class="nav-animation">
+            <lottie-player
+              src="animations/dauhpins.json"
+              background="transparent"
+              speed="1"
+              style="width: 100px; height: 100px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
         </ul>
       </nav>
     </header>
@@ -76,7 +90,7 @@
         </div>
         <div class="hero-animation">
           <lottie-player
-            src="https://assets3.lottiefiles.com/packages/lf20_ystsffqy.json"
+            src="animations/hero-animation.json"
             background="transparent"
             speed="1"
             style="width: 100%; height: 100%"
@@ -88,6 +102,16 @@
 
       <section id="a-propos" class="about">
         <h2 class="section-title">L'Équipe de Choc</h2>
+        <div class="about-animation">
+          <lottie-player
+            src="animations/boat.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
         <div class="about-content">
           <div class="about-text">
             <p>
@@ -272,6 +296,172 @@
         </div>
       </section>
 
+      <section id="balades" class="boat-trips">
+        <h2 class="section-title">Nos Balades en Bateau</h2>
+        <p class="boat-trips-tagline">
+          Quand on n'a pas le pied marin, on prend la vague du bon côté !
+        </p>
+
+        <div class="boat-animation-top">
+          <lottie-player
+            src="animations/boat.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 200px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="boat-trips-container">
+          <div class="boat-trip-card">
+            <div class="boat-trip-image">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+                alt="Snorkeling avec les Poissons"
+              />
+            </div>
+            <div class="boat-trip-content">
+              <h3>"À Fleur d'Eau" - Snorkeling</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Difficulté:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 40%"></div>
+                </div>
+              </div>
+              <p>
+                Nage avec les poissons sans te mouiller... enfin si, mais juste
+                un peu ! Parfait pour les débutants et les familles.
+              </p>
+              <div class="boat-trip-details">
+                <div class="boat-trip-duration">
+                  <i class="fas fa-clock"></i> 2h30
+                </div>
+                <div class="boat-trip-price">
+                  <i class="fas fa-tag"></i> 45€/personne
+                </div>
+              </div>
+              <a href="#contact" class="boat-trip-button">Réserver ma place</a>
+            </div>
+          </div>
+
+          <div class="boat-trip-card">
+            <div class="boat-trip-image">
+              <img
+                src="https://images.unsplash.com/photo-1607153333879-c174d265f1d2"
+                alt="Coucher de Soleil Gastronomique"
+              />
+            </div>
+            <div class="boat-trip-content">
+              <h3>"Soleil Couchant" - Croisière Dîner</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Difficulté:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 10%"></div>
+                </div>
+              </div>
+              <p>
+                La seule difficulté sera de choisir entre admirer le coucher de
+                soleil ou dévorer notre plateau de fruits de mer. Ou les deux !
+              </p>
+              <div class="boat-trip-details">
+                <div class="boat-trip-duration">
+                  <i class="fas fa-clock"></i> 3h
+                </div>
+                <div class="boat-trip-price">
+                  <i class="fas fa-tag"></i> 85€/personne
+                </div>
+              </div>
+              <a href="#contact" class="boat-trip-button">Réserver ma place</a>
+            </div>
+          </div>
+
+          <div class="boat-trip-card">
+            <div class="boat-trip-image">
+              <img
+                src="https://images.unsplash.com/photo-1570458436416-b8fcccfe883f"
+                alt="Rencontre avec les Dauphins"
+              />
+            </div>
+            <div class="boat-trip-content">
+              <h3>"Flipper le Magnifique" - Dauphins</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Difficulté:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 20%"></div>
+                </div>
+              </div>
+              <p>
+                Partez à la rencontre des dauphins dans leur habitat naturel.
+                Ils sont plus intelligents que certains de nos moniteurs !
+              </p>
+              <div class="boat-trip-details">
+                <div class="boat-trip-duration">
+                  <i class="fas fa-clock"></i> 4h
+                </div>
+                <div class="boat-trip-price">
+                  <i class="fas fa-tag"></i> 65€/personne
+                </div>
+              </div>
+              <a href="#contact" class="boat-trip-button">Réserver ma place</a>
+            </div>
+          </div>
+
+          <div class="boat-trip-card">
+            <div class="boat-trip-image">
+              <img
+                src="https://images.unsplash.com/photo-1596450514735-111a2fe02935"
+                alt="Exploration des Calanques"
+              />
+            </div>
+            <div class="boat-trip-content">
+              <h3>"Calanques & Calme" - Exploration</h3>
+              <div class="intensity-meter">
+                <span class="intensity-label">Difficulté:</span>
+                <div class="intensity-bar">
+                  <div class="intensity-fill" style="width: 30%"></div>
+                </div>
+              </div>
+              <p>
+                Naviguez le long des calanques et découvrez des criques
+                secrètes. La seule chose plus bleue que l'eau, c'est le ciel !
+              </p>
+              <div class="boat-trip-details">
+                <div class="boat-trip-duration">
+                  <i class="fas fa-clock"></i> 5h
+                </div>
+                <div class="boat-trip-price">
+                  <i class="fas fa-tag"></i> 70€/personne
+                </div>
+              </div>
+              <a href="#contact" class="boat-trip-button">Réserver ma place</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="boat-animation-bottom">
+          <lottie-player
+            src="animations/dauhpins.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 200px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="boat-trips-promo">
+          <div class="promo-content">
+            <h3>Offre Spéciale "Moussaillon Fidèle"</h3>
+            <p>
+              Réservez 3 balades différentes et obtenez 15% de réduction sur
+              votre total !
+            </p>
+            <a href="#contact" class="promo-button">J'en profite</a>
+          </div>
+        </div>
+      </section>
+
       <section id="tarifs" class="pricing">
         <h2 class="section-title">Tarifs & Réservations</h2>
         <p class="pricing-tagline">
@@ -363,7 +553,16 @@
         <p class="contact-tagline">
           Postule pour ton propre rôle dans notre film sous-marin !
         </p>
-
+        <div class="contact-animation">
+          <lottie-player
+            src="animations/splash-animation.json"
+            background="transparent"
+            speed="1"
+            style="width: 120px; height: 120px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
         <div class="contact-container">
           <div class="contact-info">
             <div class="contact-item">
@@ -454,6 +653,16 @@
         <div class="footer-logo">
           <h2>Poulp Fiction</h2>
           <p>Octo-plonge avec nous ! 🐙💦</p>
+          <div class="footer-animation">
+            <lottie-player
+              src="animations/hero-animation.json"
+              background="transparent"
+              speed="1"
+              style="width: 100px; height: 100px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
         </div>
         <div class="footer-links">
           <div class="footer-column">
@@ -462,6 +671,7 @@
               <li><a href="#accueil">Accueil</a></li>
               <li><a href="#a-propos">À Propos</a></li>
               <li><a href="#plongees">Nos Plongées</a></li>
+              <li><a href="#balades">Balades en Bateau</a></li>
               <li><a href="#tarifs">Tarifs</a></li>
               <li><a href="#galerie">Galerie</a></li>
               <li><a href="#contact">Contact</a></li>
