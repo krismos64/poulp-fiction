@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond circulaire -->
+  <circle cx="256" cy="256" r="256" fill="#0288D1"/>
+  
+  <!-- Corps du poulpe -->
+  <ellipse cx="256" cy="220" rx="120" ry="130" fill="#E91E63"/>
+  
+  <!-- Yeux -->
+  <circle cx="216" cy="180" r="25" fill="white"/>
+  <circle cx="296" cy="180" r="25" fill="white"/>
+  <circle cx="216" cy="180" r="12" fill="black"/>
+  <circle cx="296" cy="180" r="12" fill="black"/>
+  
+  <!-- Tentacules -->
+  <!-- Tentacule 1 -->
+  <path d="M160 260 C120 300, 80 350, 60 420" stroke="#E91E63" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Tentacule 2 -->
+  <path d="M190 300 C170 350, 150 400, 120 450" stroke="#E91E63" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Tentacule 3 -->
+  <path d="M230 320 C220 370, 210 420, 200 470" stroke="#E91E63" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Tentacule 4 -->
+  <path d="M280 320 C290 370, 300 420, 310 470" stroke="#E91E63" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Tentacule 5 -->
+  <path d="M320 300 C340 350, 360 400, 390 450" stroke="#E91E63" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Tentacule 6 -->
+  <path d="M350 260 C390 300, 430 350, 450 420" stroke="#E91E63" stroke-width="20" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sourire -->
+  <path d="M216 230 C236 250, 276 250, 296 230" stroke="white" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg> 
