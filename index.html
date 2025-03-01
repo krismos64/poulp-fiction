@@ -12,6 +12,16 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
+    <div class="audio-player">
+      <audio id="background-music" loop>
+        <source src="audio/oceanik park.mp3" type="audio/mp3" />
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+      <button id="music-toggle" class="music-toggle">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+
     <div class="splash-screen" id="splash-screen">
       <div class="splash-content">
         <lottie-player

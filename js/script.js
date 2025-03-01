@@ -1,5 +1,58 @@
 // Attendre que le DOM soit complètement chargé
 document.addEventListener("DOMContentLoaded", () => {
+  // Gestion de l'audio
+  const backgroundMusic = document.getElementById("background-music");
+  const musicToggle = document.getElementById("music-toggle");
+  const musicIcon = musicToggle.querySelector("i");
+  let musicStarted = false;
+
+  // Fonction pour jouer la musique
+  function playMusic() {
+    backgroundMusic
+      .play()
+      .then(() => {
+        musicStarted = true;
+        musicIcon.className = "fas fa-volume-up";
+        musicToggle.classList.remove("muted");
+      })
+      .catch((error) => {
+        console.error("Erreur lors de la lecture de la musique:", error);
+      });
+  }
+
+  // Fonction pour couper/réactiver la musique
+  function toggleMusic() {
+    if (!musicStarted) {
+      playMusic();
+      return;
+    }
+
+    if (backgroundMusic.paused) {
+      backgroundMusic.play();
+      musicIcon.className = "fas fa-volume-up";
+      musicToggle.classList.remove("muted");
+    } else {
+      backgroundMusic.pause();
+      musicIcon.className = "fas fa-volume-mute";
+      musicToggle.classList.add("muted");
+    }
+  }
+
+  // Gérer le clic sur le bouton de musique
+  musicToggle.addEventListener("click", toggleMusic);
+
+  // Tenter de jouer la musique automatiquement (peut être bloqué par le navigateur)
+  document.addEventListener(
+    "click",
+    function initialPlay() {
+      if (!musicStarted) {
+        playMusic();
+        document.removeEventListener("click", initialPlay);
+      }
+    },
+    { once: false }
+  );
+
   // Gestion de l'écran de démarrage (splash screen)
   const splashScreen = document.getElementById("splash-screen");
   const enterSiteBtn = document.getElementById("enter-site");
@@ -92,6 +145,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (enterSiteBtn) {
     enterSiteBtn.addEventListener("click", () => {
       splashScreen.style.opacity = "0";
+
+      // Lancer la musique lorsque l'utilisateur entre sur le site
+      if (!musicStarted) {
+        playMusic();
+      }
+
       setTimeout(() => {
         splashScreen.style.display = "none";
       }, 500);
